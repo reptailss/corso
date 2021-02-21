@@ -1,0 +1,51 @@
+.banner {
+    padding-bottom: 57px;
+    &__inner {
+        display: flex;
+    }
+    &__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    &__box {
+        padding: 20px 0;
+    }
+    &__title {
+        margin-top: 10px;
+    }
+    &__subtitle {
+        margin-top: 15px;
+        transition: all .3s;
+        &:hover {
+            opacity: .5;
+        }
+    }
+    &__imgs {
+        max-width: 710px;
+        width: 100%;
+        max-height: 660px;
+    }
+    &__img {
+        max-width: 100%;
+    }
+}
+
+// .banner-two {
+//     &__item {
+//         display: flex;
+//     }
+//     &__box {
+//         padding: 20px 20px 0;
+//     }
+//     &__title {
+//         margin-top: 10px;
+//     }
+//     &__subtitle {
+//         margin-top: 15px;
+//     }
+//     &__imgs {
+//         max-width: 50%;
+//     }
+//     &__img {
+//         width: 100%;
+//     }
+// }
