@@ -4,9 +4,12 @@
     padding: 30px 0 21px;
     z-index: 15;
     background-color: #fff;
+    top: 0;
     &__logo {
         margin: 0 auto;
         display: block;
+        max-width: 512px;
+        width: 100%;
     }
     &__inner {
         margin-top: 36px;

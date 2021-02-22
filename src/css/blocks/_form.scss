@@ -17,32 +17,35 @@
     .custom-radio+label::before {
         content: '';
         display: inline-block;
-        width: 1em;
-        height: 1em;
+        width: 44px;
+        height: 44px;
         flex-shrink: 0;
         flex-grow: 0;
-        border: 1px solid #adb5bd;
-        border-radius: 50%;
-        margin-right: 0.5em;
+        border: 1px solid #000;
+        margin-left: 20px;
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: 50% 50%;
+        // background-size: 50% 50%;
+        order: 2;
     }
     /* стили при наведении курсора на радио */
     
     .custom-radio:not(:disabled):not(:checked)+label:hover::before {
-        border-color: #b3d7ff;
+        border-color: #c4c4c4;
+        ;
     }
     /* стили для активной радиокнопки (при нажатии на неё) */
     
     .custom-radio:not(:disabled):active+label::before {
-        background-color: #b3d7ff;
-        border-color: #b3d7ff;
+        background-color: #fff;
+        border-color: #c4c4c4;
+        background-image: url(../img/icon/checkbox.png);
     }
     /* стили для радиокнопки, находящейся в фокусе */
     
     .custom-radio:focus+label::before {
-        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        box-shadow: 0 0 0 0.2rem rgba(#c4c4c4, 1);
+        background-image: url(../img/icon/checkbox.png);
     }
     /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
     
@@ -52,9 +55,8 @@
     /* стили для радиокнопки, находящейся в состоянии checked */
     
     .custom-radio:checked+label::before {
-        border-color: #0b76ef;
-        background-color: #0b76ef;
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+        border-color: #000;
+        background-image: url(../img/icon/checkbox.png);
     }
     /* стили для радиокнопки, находящейся в состоянии disabled */
     
@@ -68,4 +70,32 @@
     
     .radio {
         margin-bottom: 0.4em;
+    }
+    
+    .news-form {
+        margin-top: 20px;
+        &__form {
+            width: 100%;
+        }
+        &__box {
+            display: flex;
+        }
+        &__input {
+            padding: 0;
+            opacity: 1;
+            width: 100%;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #000;
+            border: none;
+            outline: none;
+        }
+        &__input-border {
+            border-bottom: 2px solid #000;
+        }
+        &__input-name {
+            width: 50%;
+        }
+        &__checkbox {
+            display: flex;
+        }
     }

@@ -102,7 +102,7 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
-body {
+body, .title {
   font-family: "HelveticaBold";
   font-style: normal;
   font-weight: 700; }
@@ -111,6 +111,27 @@ body {
   font-family: "HelveticaMediumItalic";
   font-style: oblique;
   font-weight: 500; }
+
+.pb-57 {
+  padding-bottom: 57px; }
+
+.mr-25 {
+  margin-right: 25px; }
+
+.mr-20 {
+  margin-right: 20px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mb-25 {
+  margin-bottom: 25px; }
+
+.border-botom {
+  border-bottom: 1px solid #000; }
+
+.p0-20 {
+  padding: 0 20px; }
 
 /**
  * Swiper 5.3.7
@@ -840,6 +861,29 @@ a {
   line-height: 60px;
   font-size: 60px; }
 
+.color {
+  color: #c4c4c4; }
+
+.color-placeholder::-webkit-input-placeholder {
+  color: #c4c4c4;
+  opacity: 1; }
+
+.color-placeholder::-moz-placeholder {
+  color: #c4c4c4;
+  opacity: 1; }
+
+.color-placeholder:-ms-input-placeholder {
+  color: #c4c4c4;
+  opacity: 1; }
+
+.color-placeholder::-ms-input-placeholder {
+  color: #c4c4c4;
+  opacity: 1; }
+
+.color-placeholder::placeholder {
+  color: #c4c4c4;
+  opacity: 1; }
+
 .subtitle {
   font-size: 19px;
   line-height: 35px; }
@@ -858,10 +902,13 @@ a {
   position: fixed;
   padding: 30px 0 21px;
   z-index: 15;
-  background-color: #fff; }
+  background-color: #fff;
+  top: 0; }
   .header__logo {
     margin: 0 auto;
-    display: block; }
+    display: block;
+    max-width: 512px;
+    width: 100%; }
   .header__inner {
     margin-top: 36px;
     display: -webkit-box;
@@ -1006,35 +1053,42 @@ a {
   max-width: 100%;
   width: 100%; }
 
-.banner {
-  padding-bottom: 57px; }
-  .banner__inner {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-  .banner__item:not(:last-child) {
-    margin-right: 20px; }
-  .banner__box {
-    padding: 20px 0; }
-  .banner__title {
-    margin-top: 10px; }
-  .banner__subtitle {
-    margin-top: 15px;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s; }
-    .banner__subtitle:hover {
-      opacity: .5; }
-  .banner__imgs {
-    max-width: 710px;
-    width: 100%;
-    max-height: 660px; }
-  .banner__img {
-    max-width: 100%; }
+.banner__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.banner__box {
+  padding: 20px 0; }
+
+.banner__title {
+  margin-top: 10px; }
+
+.banner__subtitle {
+  margin-top: 15px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .banner__subtitle:hover {
+    opacity: .5; }
+
+.banner__imgs {
+  max-width: 710px;
+  width: 100%;
+  max-height: 660px; }
+
+.banner__img {
+  max-width: 100%; }
 
 .news__inner {
-  padding: 0 20px 57px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1054,13 +1108,10 @@ a {
   margin-top: 5px; }
 
 .news__item {
-  max-width: 335px; }
-
-.news__item:not(:last-child) {
-  margin-right: 20px; }
+  max-width: 25%; }
 
 .news__nav {
-  width: 335px;
+  width: 25%;
   padding-top: 55px;
   margin-top: 20px; }
 
@@ -1109,8 +1160,8 @@ a {
 .custom-radio + label::before {
   content: '';
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 44px;
+  height: 44px;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -1118,26 +1169,30 @@ a {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 1px solid #adb5bd;
-  border-radius: 50%;
-  margin-right: 0.5em;
+  border: 1px solid #000;
+  margin-left: 20px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 50% 50%; }
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2; }
 
 /* стили при наведении курсора на радио */
 .custom-radio:not(:disabled):not(:checked) + label:hover::before {
-  border-color: #b3d7ff; }
+  border-color: #c4c4c4; }
 
 /* стили для активной радиокнопки (при нажатии на неё) */
 .custom-radio:not(:disabled):active + label::before {
-  background-color: #b3d7ff;
-  border-color: #b3d7ff; }
+  background-color: #fff;
+  border-color: #c4c4c4;
+  background-image: url(../img/icon/checkbox.png); }
 
 /* стили для радиокнопки, находящейся в фокусе */
 .custom-radio:focus + label::before {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+  -webkit-box-shadow: 0 0 0 0.2rem #c4c4c4;
+          box-shadow: 0 0 0 0.2rem #c4c4c4;
+  background-image: url(../img/icon/checkbox.png); }
 
 /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
 .custom-radio:focus:not(:checked) + label::before {
@@ -1145,9 +1200,8 @@ a {
 
 /* стили для радиокнопки, находящейся в состоянии checked */
 .custom-radio:checked + label::before {
-  border-color: #0b76ef;
-  background-color: #0b76ef;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); }
+  border-color: #000;
+  background-image: url(../img/icon/checkbox.png); }
 
 /* стили для радиокнопки, находящейся в состоянии disabled */
 .custom-radio:disabled + label::before {
@@ -1158,3 +1212,30 @@ body {
 
 .radio {
   margin-bottom: 0.4em; }
+
+.news-form {
+  margin-top: 20px; }
+  .news-form__form {
+    width: 100%; }
+  .news-form__box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .news-form__input {
+    padding: 0;
+    opacity: 1;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+    border: none;
+    outline: none; }
+  .news-form__input-border {
+    border-bottom: 2px solid #000; }
+  .news-form__input-name {
+    width: 50%; }
+  .news-form__checkbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }

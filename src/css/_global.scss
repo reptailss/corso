@@ -30,6 +30,18 @@
         .title {
             line-height: 60px;
             font-size: 60px;
+            @extend %helv-b;
+        }
+        
+        .color {
+            color: #c4c4c4;
+        }
+        
+        .color-placeholder {
+            &::placeholder {
+                color: #c4c4c4;
+                opacity: 1;
+            }
         }
         
         .subtitle {
