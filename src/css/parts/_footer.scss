@@ -1,0 +1,22 @@
+.footer {
+    &__inner {
+        padding: 20px 20px 72px;
+        border-top: 2px solid #000;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 275px;
+    }
+    &__link {
+        display: block;
+        margin-top: 15px;
+        font-size: 13px;
+        line-height: 17px;
+        &:hover {
+            opacity: .5;
+        }
+    }
+}

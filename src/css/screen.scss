@@ -1,4 +1,5 @@
 @import "_reset";
+// @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "_constants";
 @import "libs/_base";
 @import "_fonts";
@@ -9,9 +10,9 @@
 @import "blocks/_banner";
 @import "blocks/_news";
 @import "blocks/_form";
+@import "blocks/_burger";
 // @import "typography"; //grid
 // @import "grid-options";
-// @import '../node_modules/bootstrap-4-grid/scss/grid.scss';
 // @import "layout"; //default parts
 // @import "parts/buttons";
 // @import "parts/form";
@@ -29,3 +30,4 @@
 // @import "blocks/newsBlock";
 // @import "blocks/imagesGrid";
 // @import "blocks/video";
+@import "lib/_media";

@@ -1,0 +1,123 @@
+@media (max-width:1500px) {
+    .news__inner {
+        justify-content: space-around;
+    }
+    .slide-top__container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:800px) {
+    .slide-top__pagination {
+        position: absolute;
+        bottom: auto !important;
+        right: 20px !important;
+        left: auto !important;
+        top: 23px !important;
+    }
+    .slide-top__pagination .swiper-pagination-bullet {
+        color: #fff;
+    }
+    .slide-top__pagination .swiper-pagination-bullet-active {
+        color: #000;
+    }
+    .burger {
+        display: block;
+        top: 92px;
+        left: 15px;
+        position: fixed;
+    }
+    .header-menu__list {
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+        -webkit-transform: translateX(120vw);
+        -ms-transform: translateX(120vw);
+        transform: translateX(120vw);
+        position: absolute;
+        top: 0;
+        right: 0;
+        -webkit-transform: 0;
+        -ms-transform: 0;
+        transform: 0;
+        display: block;
+        z-index: 99999;
+        background-color: rgba(#ffff, 1);
+        padding: 35px 20px;
+        width: 70%;
+    }
+    .header-menu__item:not(:last-child) {
+        margin-right: 0px;
+    }
+    .header-menu__item {
+        margin-top: 10px;
+    }
+    .header-menu__submenu-inner {
+        display: block;
+        position: static;
+        top: 0;
+        background-color: transparent;
+        padding: 10px 0px;
+    }
+    .header-menu__submenu-list {
+        position: static;
+        top: 0
+    }
+    .header-menu__submenu-inner {
+        border-bottom: 1px solid #000;
+        width: 100%;
+    }
+    .header-menu__submenu-item {
+        margin-right: 0;
+        display: block;
+        font-size: 12px;
+    }
+    .header__inner {
+        margin-top: 15px;
+    }
+    .header {
+        padding-top: 10px;
+    }
+    .news-form__box {
+        display: block;
+    }
+    .news-form__input-name {
+        width: 100%;
+    }
+    .news-form__checkbox {
+        display: block;
+    }
+    .title {
+        line-height: 50px;
+        font-size: 46px;
+    }
+    .min-title {
+        font-size: 20px;
+    }
+    .subheading {
+        font-size: 14px;
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .min-subheading {
+        font-size: 14px;
+    }
+    .swiper-pagination-bullet {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:500px) {
+    .title {
+        line-height: 40px;
+        font-size: 32px;
+    }
+    .min-title {
+        line-height: 20px;
+        font-size: 18px;
+    }
+    .swiper-pagination-bullet {
+        font-size: 20px;
+    }
+}

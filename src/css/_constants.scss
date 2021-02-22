@@ -115,9 +115,21 @@
     }
     
     .border-botom {
-        border-bottom: 1px solid #000;
+        border-bottom: 2px solid #000;
+    }
+    
+    .border-top {
+        border-top: 2px solid #000;
     }
     
     .p0-20 {
         padding: 0 20px;
+    }
+    
+    .pb-70 {
+        padding-bottom: 70px;
+    }
+    
+    .mr-70 {
+        margin-right: 70px;
     }
