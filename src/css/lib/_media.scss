@@ -106,6 +106,34 @@
     .swiper-pagination-bullet {
         font-size: 30px;
     }
+    .header-menu__submenu-list {
+        height: 0;
+    }
+    .footer__item {
+        max-width: 150px;
+    }
+    .footer__item-list-js {
+        overflow: hidden;
+        height: 0;
+        transform: translateX(-120vh);
+    }
+    .footer__item-list-js.active {
+        overflow: visible;
+        height: auto;
+        transform: translateX(0);
+    }
+    .footer__list {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer__item {
+        font-size: 22px;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 15px;
+    }
 }
 
 @media (max-width:764px) {

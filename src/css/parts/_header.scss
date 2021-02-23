@@ -68,9 +68,11 @@
     }
 }
 
-.sub-menu {
+.header-menu__submenu-list {
+    height: 0;
     overflow: hidden;
     opacity: 0;
     transition: all 0.5s ease-in;
-    // height: 0;
+    height: 0;
+    display: none;
 }

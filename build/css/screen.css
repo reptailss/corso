@@ -930,6 +930,14 @@ a {
   color: #c4c4c4;
   opacity: 1; }
 
+.link {
+  display: block;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .link:hover {
+    opacity: .5; }
+
 .header {
   width: 100%;
   position: fixed;
@@ -1019,12 +1027,15 @@ a {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.sub-menu {
+.header-menu__submenu-list {
+  height: 0;
   overflow: hidden;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in; }
+  transition: all 0.5s ease-in;
+  height: 0;
+  display: none; }
 
 .footer__inner {
   padding: 20px 20px 72px;
@@ -1326,6 +1337,15 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+  .news-form__btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .news-form__btn:hover {
+      opacity: .5; }
 
 .burger {
   position: absolute;
@@ -1489,7 +1509,36 @@ a {
   .min-subheading {
     font-size: 14px; }
   .swiper-pagination-bullet {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .header-menu__submenu-list {
+    height: 0; }
+  .footer__item {
+    max-width: 150px; }
+  .footer__item-list-js {
+    overflow: hidden;
+    height: 0;
+    -webkit-transform: translateX(-120vh);
+        -ms-transform: translateX(-120vh);
+            transform: translateX(-120vh); }
+  .footer__item-list-js.active {
+    overflow: visible;
+    height: auto;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
+  .footer__list {
+    display: block;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center; }
+  .footer__item {
+    font-size: 22px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 15px; } }
 
 @media (max-width: 764px) {
   .news__nav-full {

@@ -94,4 +94,13 @@
         &__checkbox {
             display: flex;
         }
+        &__btn {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            transition: all .3s;
+            &:hover {
+                opacity: .5;
+            }
+        }
     }
