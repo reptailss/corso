@@ -1024,8 +1024,7 @@ a {
   opacity: 0;
   -webkit-transition: all 0.5s ease-in;
   -o-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-  height: 0; }
+  transition: all 0.5s ease-in; }
 
 .footer__inner {
   padding: 20px 20px 72px;
@@ -1491,6 +1490,10 @@ a {
     font-size: 14px; }
   .swiper-pagination-bullet {
     font-size: 30px; } }
+
+@media (max-width: 764px) {
+  .news__nav-full {
+    margin-top: 25px; } }
 
 @media (max-width: 500px) {
   .title {

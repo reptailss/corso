@@ -34,7 +34,7 @@ function showSub(e) {
         this.children[1].style.transform = "translateY(0)";
         this.children[1].style.overflow = "visible";
         this.children[1].style.opacity = "1";
-        this.children[1].style.height = "auto";
+        // this.children[1].style.height = "auto";
 
     } else {
         return false;
@@ -46,7 +46,7 @@ function hideSub(e) {
         this.children[1].style.transform = "translateY(100%)";
         this.children[1].style.overflow = "hidden";
         this.children[1].style.opacity = "0";
-        this.children[1].style.height = "0";
+        // this.children[1].style.height = "0";
 
     } else {
         return false;
