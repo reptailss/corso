@@ -112,6 +112,12 @@ body, .title {
   font-style: oblique;
   font-weight: 500; }
 
+.border-botom {
+  border-bottom: 2px solid #000; }
+
+.border-top {
+  border-top: 2px solid #000; }
+
 .pb-57 {
   padding-bottom: 57px; }
 
@@ -127,12 +133,6 @@ body, .title {
 .mb-25 {
   margin-bottom: 25px; }
 
-.border-botom {
-  border-bottom: 2px solid #000; }
-
-.border-top {
-  border-top: 2px solid #000; }
-
 .p0-20 {
   padding: 0 20px; }
 
@@ -141,6 +141,12 @@ body, .title {
 
 .mr-70 {
   margin-right: 70px; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.mt-15 {
+  margin-top: 15px; }
 
 /**
  * Swiper 5.3.7
@@ -845,27 +851,6 @@ body {
   color: #000000; }
 
 .container {
-  max-width: 1470px;
-  padding: 0 15px;
-  margin: 0 auto; }
-  @media (max-width: 1280px) {
-    .container {
-      max-width: 960px; } }
-  @media (max-width: 1024px) {
-    .container {
-      max-width: 720px; } }
-  @media (max-width: 767px) {
-    .container {
-      max-width: 440px;
-      padding: 0 10px; } }
-  @media (max-width: 479px) {
-    .container {
-      max-width: 380px; } }
-  @media (max-width: 380px) {
-    .container {
-      max-width: 300px; } }
-
-.container-r {
   max-width: 1440px;
   margin: 0 auto; }
 
@@ -1027,15 +1012,24 @@ a {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.header-menu__submenu-list {
+.header__list-js {
   height: 0;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
-  height: 0;
-  display: none; }
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+  -webkit-transform: translateY(120vh);
+      -ms-transform: translateY(120vh);
+          transform: translateY(120vh); }
+
+.header__list-js.active {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  height: auto;
+  overflow: visible;
+  opacity: 1; }
 
 .footer__inner {
   padding: 20px 20px 72px;
@@ -1122,12 +1116,6 @@ a {
 .slide-top__box {
   padding: 16px 20px 36px; }
 
-.slide-top__title {
-  margin-top: 10px; }
-
-.slide-top__subtitle {
-  margin-top: 15px; }
-
 .slide-top__img {
   max-width: 100%; }
 
@@ -1167,11 +1155,7 @@ a {
 .banner__box {
   padding: 20px 0; }
 
-.banner__title {
-  margin-top: 10px; }
-
 .banner__subtitle {
-  margin-top: 15px;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s; }
@@ -1197,7 +1181,8 @@ a {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding: 0 20px 57px; }
 
 .news__item {
   width: 335px; }
@@ -1425,6 +1410,27 @@ a {
   -webkit-box-shadow: 0px 0px 81px 8px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 81px 8px rgba(0, 0, 0, 0.75); }
 
+@media (max-width: 1280px) {
+  .container {
+    max-width: 960px; } }
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 720px; } }
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 440px;
+    padding: 0 10px; } }
+
+@media (max-width: 479px) {
+  .container {
+    max-width: 380px; } }
+
+@media (max-width: 380px) {
+  .container {
+    max-width: 300px; } }
+
 @media (max-width: 1500px) {
   .news__inner {
     -webkit-justify-content: space-around;
@@ -1432,6 +1438,10 @@ a {
             justify-content: space-around; }
   .slide-top__container {
     max-width: 100%; } }
+
+@media (max-width: 1280px) {
+  .banner__item {
+    margin-right: 0; } }
 
 @media (max-width: 800px) {
   .slide-top__pagination {
@@ -1517,9 +1527,12 @@ a {
   .footer__item-list-js {
     overflow: hidden;
     height: 0;
-    -webkit-transform: translateX(-120vh);
-        -ms-transform: translateX(-120vh);
-            transform: translateX(-120vh); }
+    -webkit-transform: translateX(120vh);
+        -ms-transform: translateX(120vh);
+            transform: translateX(120vh);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
   .footer__item-list-js.active {
     overflow: visible;
     height: auto;

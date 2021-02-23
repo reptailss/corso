@@ -1,9 +1,34 @@
+.container {
+    @media (max-width: 1280px) {
+        max-width: 960px;
+    }
+    @media(max-width: 1024px) {
+        max-width: 720px;
+    }
+    @media (max-width: 767px) {
+        max-width: 440px;
+        padding: 0 10px;
+    }
+    @media (max-width: 479px) {
+        max-width: 380px;
+    }
+    @media (max-width: 380px) {
+        max-width: 300px;
+    }
+}
+
 @media (max-width:1500px) {
     .news__inner {
         justify-content: space-around;
     }
     .slide-top__container {
         max-width: 100%;
+    }
+}
+
+@media (max-width:1280px) {
+    .banner__item {
+        margin-right: 0;
     }
 }
 
@@ -115,7 +140,8 @@
     .footer__item-list-js {
         overflow: hidden;
         height: 0;
-        transform: translateX(-120vh);
+        transform: translateX(120vh);
+        transition: all .3s;
     }
     .footer__item-list-js.active {
         overflow: visible;

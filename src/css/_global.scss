@@ -4,28 +4,6 @@ body {
 }
 
 .container {
-    max-width: 1470px;
-    padding: 0 15px;
-    margin: 0 auto;
-    @media (max-width: 1280px) {
-        max-width: 960px;
-    }
-    @media(max-width: 1024px) {
-        max-width: 720px;
-    }
-    @media (max-width: 767px) {
-        max-width: 440px;
-        padding: 0 10px;
-    }
-    @media (max-width: 479px) {
-        max-width: 380px;
-    }
-    @media (max-width: 380px) {
-        max-width: 300px;
-    }
-}
-
-.container-r {
     max-width: 1440px;
     margin: 0 auto;
 }

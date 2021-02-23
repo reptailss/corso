@@ -30,7 +30,6 @@
     &__item:not(:last-child) {
         margin-right: 70px;
     }
-    &__item {}
     &__link {
         transition: all .3s;
         &:hover {
@@ -68,11 +67,17 @@
     }
 }
 
-.header-menu__submenu-list {
+.header__list-js {
     height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: all 0.5s ease-in;
-    height: 0;
-    display: none;
+    transition: all 0.7s;
+    transform: translateY(120vh);
+}
+
+.header__list-js.active {
+    transform: translateX(0);
+    height: auto;
+    overflow: visible;
+    opacity: 1;
 }
