@@ -1,6 +1,6 @@
 .footer {
     &__inner {
-        padding: 20px 20px 72px;
+        padding: 16px 20px 72px;
         border-top: 2px solid #000;
     }
     &__list {
@@ -11,12 +11,9 @@
         max-width: 275px;
     }
     &__link {
-        display: block;
-        margin-top: 15px;
         font-size: 13px;
         line-height: 17px;
-        &:hover {
-            opacity: .5;
-        }
+        text-transform: none;
+        margin-top: 9px;
     }
 }

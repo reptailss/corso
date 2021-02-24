@@ -21,20 +21,32 @@ sliders.forEach((el) => {
 
     });
 });
-
-
 $(function() {
     $('.burger').on('click', function() {
         $(this).find('.burger-span').toggleClass('active');
         $('.header-menu__list').toggleClass('active');
     })
-
     $('.footer__item-js').on('click', function() {
         $(this).find('.footer__item-list-js').toggleClass('active');
     })
-    $('.header__item-js').hover(function() {
-        $(this).find('.header__list-js').toggleClass('active');
-
+    $(function() {
+        var a = $(".nav-menu"),
+            b = 700;
+        $(".submenu", a).each(function(a, c) {
+            $(c).parent().on({
+                mouseenter: function() {
+                    $(c).stop(!0).delay(b).fadeIn(600);
+                    b = 100
+                },
+                mouseleave: function() {
+                    $(c).stop(!0).delay(300).fadeOut(600)
+                }
+            })
+        }).hide().eq(0).show();
+        a.on({
+            mouseleave: function() {
+                b = 700
+            }
+        })
     });
-
 });

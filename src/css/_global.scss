@@ -1,74 +1,75 @@
-body {
-    @extend %helv-b;
-    color: #000000;
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-* {
-    list-style: none;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all .3s;
-}
-
-.page-wrapper {
-    padding-top: 143px;
-}
-
-.subheading {
-    color: #000000;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-transform: uppercase;
-}
-
-.title {
-    line-height: 60px;
-    font-size: 60px;
-    @extend %helv-b;
-}
-
-.subtitle {
-    @extend %helv-mi;
-    font-size: 19px;
-    line-height: 35px;
-}
-
-.min-title {
-    line-height: 28px;
-    font-size: 24px;
-}
-
-.min-subheading {
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-}
-
-.color {
-    color: #c4c4c4;
-}
-
-.color-placeholder {
-    &::placeholder {
-        color: #c4c4c4;
-        opacity: 1;
-    }
-}
-
-.link {
-    display: block;
-    transition: all .3s;
-    &:hover {
-        opacity: .5;
-    }
-}
+        body {
+            @extend %helv-b;
+            color: #000000;
+        }
+        
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        
+        * {
+            list-style: none;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all .3s;
+        }
+        
+        .page-wrapper {
+            padding-top: 142px;
+        }
+        
+        .subheading {
+            color: #000000;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+        
+        .title {
+            line-height: 60px;
+            font-size: 60px;
+            @extend %helv-b;
+        }
+        
+        .subtitle {
+            @extend %helv-i;
+            font-size: 21px;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+        }
+        
+        .min-title {
+            line-height: 28px;
+            font-size: 24px;
+        }
+        
+        .min-subheading {
+            font-size: 16px;
+            line-height: 21px;
+            text-transform: uppercase;
+        }
+        
+        .color {
+            color: #c4c4c4;
+        }
+        
+        .color-placeholder {
+            &::placeholder {
+                color: #c4c4c4;
+                opacity: 1;
+            }
+        }
+        
+        .link {
+            display: block;
+            transition: all .3s;
+            &:hover {
+                opacity: .5;
+            }
+        }
